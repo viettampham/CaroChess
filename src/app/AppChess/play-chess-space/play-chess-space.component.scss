@@ -1,0 +1,48 @@
+.big-layout{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://cdn.pixabay.com/photo/2016/04/08/00/30/seamless-1315290_1280.jpg') top center / cover no-repeat;
+    background-size: 100px;
+    background-repeat: repeat;  
+    .inside-layout{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100vw;
+        height: 100vh;
+    }
+    .player1{
+        flex: 1;
+        height: 100%;
+    }
+    .space-play-chess{
+        flex: 6;
+        background-color: rgb(255, 255, 255);
+        height: 90%;
+        border-radius: 4px;
+        
+    }
+    .player2{
+        flex: 1;
+        height: 100%;
+    }
+}
+.square{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border: 1px solid white;
+    cursor: pointer;
+    display: block;
+}
+.gridLayout{
+    
+}

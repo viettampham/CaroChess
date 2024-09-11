@@ -1,0 +1,198 @@
+.big-layout {
+    background-image: 
+		linear-gradient(90deg, #333 30px, white 30px),
+		linear-gradient(90deg, white 30px, #333 30px),
+		linear-gradient(90deg, #333 30px, white 30px),
+        linear-gradient(90deg, white 30px, #333 30px),
+        linear-gradient(90deg, #333 30px, white 30px),
+		linear-gradient(90deg, white 30px, #333 30px),
+		linear-gradient(90deg, #333 30px, white 30px),
+        linear-gradient(90deg, white 30px, #333 30px),
+        linear-gradient(90deg, #333 30px, white 30px),
+		linear-gradient(90deg, white 30px, #333 30px),
+		linear-gradient(90deg, #333 30px, white 30px),
+        linear-gradient(90deg, white 30px, #333 30px),
+        linear-gradient(90deg, #333 30px, white 30px),
+		linear-gradient(90deg, white 30px, #333 30px),
+		linear-gradient(90deg, #333 30px, white 30px),
+        linear-gradient(90deg, white 30px, #333 30px),
+        linear-gradient(90deg, #333 30px, white 30px),
+		linear-gradient(90deg, white 30px, #333 30px),
+		linear-gradient(90deg, #333 30px, white 30px),
+        linear-gradient(90deg, white 30px, #333 30px),
+        linear-gradient(90deg, #333 30px, white 30px),
+		linear-gradient(90deg, white 30px, #333 30px),
+		linear-gradient(90deg, #333 30px, white 30px),
+        linear-gradient(90deg, white 30px, #333 30px),
+        linear-gradient(90deg, #333 30px, white 30px),
+		linear-gradient(90deg, white 30px, #333 30px),
+		linear-gradient(90deg, #333 30px, white 30px),
+        linear-gradient(90deg, white 30px, #333 30px),
+        linear-gradient(90deg, #333 30px, white 30px),
+		linear-gradient(90deg, white 30px, #333 30px),
+		linear-gradient(90deg, #333 30px, white 30px),
+        linear-gradient(90deg, white 30px, #333 30px),
+        linear-gradient(90deg, #333 30px, white 30px),
+		linear-gradient(90deg, white 30px, #333 30px),
+		linear-gradient(90deg, #333 30px, white 30px),
+        linear-gradient(90deg, white 30px, #333 30px),
+        linear-gradient(90deg, #333 30px, white 30px),
+		linear-gradient(90deg, white 30px, #333 30px),
+		linear-gradient(90deg, #333 30px, white 30px),
+        linear-gradient(90deg, white 30px, #333 30px),
+        linear-gradient(90deg, #333 30px, white 30px),
+		linear-gradient(90deg, white 30px, #333 30px),
+		linear-gradient(90deg, #333 30px, white 30px),
+        linear-gradient(90deg, white 30px, #333 30px),
+        linear-gradient(90deg, #333 30px, white 30px),
+		linear-gradient(90deg, white 30px, #333 30px),
+		linear-gradient(90deg, #333 30px, white 30px),
+        linear-gradient(90deg, white 30px, #333 30px);
+	background-position: 0 0,
+    0 30px,
+    0 60px,
+    0 90px,
+    0 120px,
+    0 150px,
+    0 180px,
+    0 210px,
+    0 240px,
+    0 270px,
+    0 300px,
+    0 330px,
+    0 360px,
+    0 390px,
+    0 420px,
+    0 450px,
+    0 480px,
+    0 510px,
+    0 540px,
+    0 570px,
+    0 600px,
+    0 630px,
+    0 660px,
+    0 690px,
+    0 720px,
+    0 750px,
+    0 780px,
+    0 810px,
+    0 840px,
+    0 870px,
+    0 900px,
+    0 930px,
+    0 960px,
+    0 990px,
+    0 1020px,
+    0 1050px,
+    0 1080px,
+    0 1110px,
+    0 1140px,
+    0 1170px,
+    0 1200px,
+    0 1230px,
+    0 1260px,
+    0 1290px,
+    0 1320px,
+    0 1350px,
+    0 1380px,
+    0 1410px,
+    0 1440px,
+    0 1470px,
+    0 1500px,
+    0 1530px,
+    0 1560px;
+	background-repeat: repeat-x;
+	background-size: 60px 30px, 60px 30px, 60px 30px;
+	height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .inside-layout{
+        margin: auto auto;
+    }
+  }
+
+  .btn-playnow {
+    color: #27692b;
+    
+  }
+  
+  body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background: #1e1e24;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  $speed: 0.5s;
+  
+  .btn-flip{
+    margin: 6px 0;
+    opacity: 1;
+    outline: 0;
+    cursor: pointer;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    
+    &:hover{
+      
+      &:after{
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+      }
+      
+      &:before{
+        opacity: 0;
+        transform: translateY(50%) rotateX(90deg);
+      }
+    }
+    
+    &:after{
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      color: #323237;
+      display: block;
+      transition: $speed;
+      position: absolute;
+      background: #adadaf;
+      content: attr(data-back);
+      transform: translateY(-50%) rotateX(90deg);
+    }
+    
+    &:before{
+      top: 0;
+      left: 0;
+      opacity: 1;
+      color: #adadaf;
+      display: block;
+      padding: 0 30px;
+      line-height: 40px;
+      transition: $speed;
+      position: relative;
+      background: #323237;
+      content: attr(data-front);
+      transform: translateY(0) rotateX(0);
+    }
+  }
+    .group-button {
+        display: flex;
+        flex-direction: column;
+    }
