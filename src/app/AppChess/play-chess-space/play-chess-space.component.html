@@ -1,20 +1,13 @@
 <div class="big-layout">
     <div class="inside-layout">
         <div class="player1">
-
         </div>
-        <div class="space-play-chess" id="space-play-chess">
-            <div class="gridLayout">
-                <div (click)="OnHandleClick($event)" class="square"></div>
-                <div (click)="OnHandleClick($event)" class="square"></div>
-                <div (click)="OnHandleClick($event)" class="square"></div>
-                <div (click)="OnHandleClick($event)" class="square"></div>
-                <div (click)="OnHandleClick($event)" class="square"></div>
-                <div (click)="OnHandleClick($event)" class="square"></div>
+        <div class="space-play-chess">
+            <div class="gridLayout" #gridLayout id="space-play-chess" *ngIf="isDoneGeneration">
+                <span *ngFor="let square of squares" (click)="OnHandleClick($event)" class="square"></span>
             </div>
         </div>
         <div class="player2">
-            
         </div>
     </div>
 </div>
